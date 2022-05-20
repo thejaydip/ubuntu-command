@@ -20,7 +20,7 @@
 
 <b><i>But make sure you neeed to navigate themes folder and plugins folder respectively</i></b>
 
- 
+
 ### File / Folder Permission for specific folder
 
 <code>sudo chmod -R 0777 /var/www/html/demo</code>
@@ -54,9 +54,11 @@
 # SSH
 
 ### CREATE TAR FILE
+
 <code>tar -zcvf public_html_10_july_2018.tar.gz public_html/*</code>
 
 ### Download Database
+
 <code>mysqldump -u [dbusername] -p [dbpassword] > demo_dev_10_july_2018.sql</code>
 
 ### Extract TAR
@@ -78,12 +80,55 @@
 # Database Import / Export
 
 ### Export
+
 <code>mysqldump -h localhost -u root -p'mysql123' db-wordpess_demo > dump.sql</code>
 
 ### Import
+
 <code>mysql -h localhost -u root -p'mysql123' db-wordpess_demo < /home/sys37/Downloads/wordpess-demo.sql</code>
 
- # How to use GIT
+# How to Install GIT
+
+<code>git --version</code>
+
+<code>sudo apt update</code>
+
+<code>sudo apt install git</code>
+
+
+### Setting Up Git
+
+Configuration can be achieved by using the git config command.
+
+<code>git config --global user.name "Your Name"</code>
+
+<code>git config --global user.email "youremail@domain.com"</code>
+
+We can display all of the configuration items that have been set by typing:
+
+<code>git config --list</code>
+
+###### REFERENCE LINK: https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04
+
+
+# How to Uninstall GIT
+
+To remove just git package itself from Ubuntu 14.04 execute on terminal:
+
+<code>sudo apt-get remove git</code>
+
+Uninstall git and it's dependent packages
+
+<code>sudo apt-get remove --auto-remove git</code>
+
+Purging git
+
+<code>sudo apt-get purge git</code>
+
+<code>sudo apt-get purge --auto-remove git</code>
+
+
+# How to use GIT
  
 ###### Take latest clone from git repo.
 <code>git clone https://github.com/[username]/[repository-name].git</code>
@@ -113,7 +158,8 @@ Run <code>git status</code> command to check list of updated files.
 ###### REFERENCE LINK: <a href="https://github.com/joshnh/Git-Commands" target="_blank">https://github.com/joshnh/Git-Commands</a>
 
 # How to Install composer
- ###### Install composer globally composer using this article https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04
+
+###### Install composer globally composer using this article https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04
  
 ###### Open terminal and type <code>whereis composer</code>, composer should be installed on this path <i>/usr/local/bin/composer</i>
  
@@ -161,7 +207,7 @@ Run <code>git status</code> command to check list of updated files.
 6. <code>sudo update-alternatives --set php /usr/bin/php7.4</code>
 7. <code>sudo systemctl restart apache2</code>
 	
-#### Refer below articles: -
+###### REFERENCE LINKs
 https://www.digitalocean.com/community/tutorials/how-to-install-php-7-4-and-set-up-a-local-development-environment-on-ubuntu-18-04
 
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
@@ -268,3 +314,5 @@ gulp.task('hello', function(done) {
 ### Install required gulp modules
 <code>npm install gulp-sourcemaps node-sass gulp-clean-css gulp-webserver gulp-sass gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-rename gulp-changed gulp-imagemin gulp-concat gulp-uglify main-bower-files gulp-watch gulp-livereload browser-sync --save-dev</code>
   
+
+###### REFERENCE LINK: https://www.digitalocean.com/community/tutorials/how-to-get-started-with-gulp-js-on-your-vps
