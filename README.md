@@ -160,6 +160,11 @@ Run <code>git status</code> command to check list of updated files.
 5. <code>sudo a2enmod php7.4</code>
 6. <code>sudo update-alternatives --set php /usr/bin/php7.4</code>
 7. <code>sudo systemctl restart apache2</code>
+	
+#### Refer below articles: -
+https://www.digitalocean.com/community/tutorials/how-to-install-php-7-4-and-set-up-a-local-development-environment-on-ubuntu-18-04
+
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
 
 ###### Check PHP version
 <code>php -v</code>
