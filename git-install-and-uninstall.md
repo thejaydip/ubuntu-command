@@ -28,7 +28,7 @@ To remove just git package itself from Ubuntu 14.04 execute on terminal:
 
 <code>sudo apt-get remove git</code>
 
-Uninstall git and it's dependent packages
+Uninstall the git and it's dependent packages
 
 <code>sudo apt-get remove --auto-remove git</code>
 
