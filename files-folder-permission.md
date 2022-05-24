@@ -69,6 +69,3 @@
 ### CREATE DB TAR FILE
 
 <code>tar -zcvf rm_wp_live_22-July-2022.tar.gz rm_wp_live_22-July-2022.sql</code>
-
-
-HEllo 
