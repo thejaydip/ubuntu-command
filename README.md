@@ -2,8 +2,6 @@
 
 ###### First of all go to theme directory path, then after apply below commands:
 
-###### First of all go to theme directory path
-
 ### For files permission
 <code>sudo find . -type f -exec chmod 644 {} \;</code>
 
